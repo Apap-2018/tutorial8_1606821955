@@ -21,6 +21,7 @@
                         Tambah User Baru
                     </div>
                     <div class="card-body">
+                    	<p th:utext="${status}" style="color: red">
                         <form th:action="@{/user/addUser}" method="post">
                         <div class="row form-group">
                             <label class="col-sm-4"> User Name</label>
